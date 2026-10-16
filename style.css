@@ -1,0 +1,207 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #1d4ed8;
+    font-size: 36px;
+}
+
+p {
+    color: #475569;
+    font-size: 18px;
+}
+
+.form-container {
+    background-color: white;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #1d4ed8;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.form-container button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #1e40af;
+}
+
+/* Search box */
+#search-input {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 15px auto 25px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+/* Student records section */
+.table-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.table-container h2 {
+    text-align: center;
+    color: #1d4ed8;
+}
+
+/* Table design */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #eff6ff;
+    color: #1e40af;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Action buttons */
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    margin: 3px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #15803d;
+}
+
+.edit-btn:hover {
+    background-color: #166534;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .table-container {
+        padding: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+/* Student count dashboard */
+.dashboard {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-card {
+    width: 220px;
+    padding: 20px;
+    background-color: #dbeafe;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #bfdbfe;
+}
+
+.stat-card h3 {
+    margin: 0 0 10px;
+    color: #1e40af;
+    font-size: 16px;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #1d4ed8;
+    font-size: 32px;
+    font-weight: bold;
+}
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#message.success {
+    color: #15803d;
+}
+
+#message.error {
+    color: #dc2626;
+}
